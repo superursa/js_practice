@@ -7,13 +7,17 @@ body {
 
 .banner {
   width: 100%;
-  padding: 10px 0;
+  height: 275px;
+  background-size: contain;
+  padding: 5px 0;
   text-align: center;
-  background: #f7a4a4;
+  background-image: url(images/lbbheader.png);
   color: #fffbc1;
+  background-color: #f7a4a4;
 }
 
 h1 {
+    flex: 1;
     font-family: 'Pacifico';
     font-size: 5em;
     -webkit-text-stroke: #white 1px;
@@ -51,17 +55,29 @@ h4 {
 }
 
 #recipe {
-  display: inline-block;
-  text-align: left;
+  align-items: center;
   font-size: 1.1em;
   font-weight: 100;
   letter-spacing: 5px;
 }
 
-.container {
+.lyrics {
   align-items: center;
-  width: 100%;
-  padding:60px 0;
+}
+
+.bigbox {
+  background:#f7a4a4;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  width: 80%;
+  padding:10px 10px;
   text-align: center;
   background: #febe8c;
   color: #fffbc1;
@@ -69,17 +85,28 @@ h4 {
 
 .recipecard {
     margin: auto;
-    width: 50%;
-    padding: 10px 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
     background: #fffbc1;
     color: #f7a4a4;
 }
 
+
+.bearspace {
+  flex: 1;
+  height: 500px;
+  background: #fffbc1;
+}
+
 #btn {
   border: none;
+  width: 200px;
   border-radius: 8px;
   padding: 12px 28px;
-  font-size: 1em;
+  font-size: 3em;
   background: #b6e2a1;
   color: #fffbc1;
 }
