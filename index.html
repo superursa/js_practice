@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Bear Bakery</title>
     <script src="baking.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+  <div class="banner">
+    <h1>Little Bear Bakery</h1>
+  </div><!--div for banner-->
   <div class="container">
-    <h3 id="lyric1">It's a piece of cake to bake a pretty cake!</h3>
-    <h4 id="lyric2">If the way is hazy...</h2>
-    <div id="recipe">
+    <div class="recipecard">
+      <h3 id="lyric1">It's a piece of cake to bake a pretty cake!</h3>
+      <h4 id="lyric2">If the way is hazy...</h2>
+      <div id="recipe">
         <ul>
             <li>flour</li>
             <li>sugar</li>
@@ -21,10 +28,11 @@
             <li>vanilla extract</li>
         </ul>
         
-        
-    </div>
+      </div> <!--div for recipe-->
+    </div> <!--div for recipe card-->
+    <br><br>
     <button onclick='press()' id="btn">Mix!</button>
-  </div>
+  </div> <!--div for container-->
     
 </body>
 </html>
