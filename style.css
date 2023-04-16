@@ -1,8 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico');
 
 
+.speech {
+  flex: 1;
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 250px;
+  background: #b6e2a1;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 35px;
+  color: #fffbc1;
+  position: relative;
+}
+
+.speech:before {
+  content: "";
+  position: absolute;
+  border-left: 20px solid #b6e2a1;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #b6e2a1;
+  border-bottom: 20px solid transparent;
+  right: -20px;
+  top: 375px;
+}
+
 body {
-    align-items: center;
+  align-items: center;
+  font-family: Lato;
 }
 
 .banner {
@@ -17,11 +45,13 @@ body {
 }
 
 h1 {
-    flex: 1;
-    font-family: 'Pacifico';
-    font-size: 5em;
-    -webkit-text-stroke: #white 1px;
+  flex: 1;
+  font-family: 'Pacifico';
+  font-size: 5em;
+  -webkit-text-stroke: white 1px;
 }
+
+;
 
 h3,
 div {
@@ -38,14 +68,37 @@ h3 {
 }
 
 @keyframes wiggle {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 h4 {
@@ -66,7 +119,7 @@ h4 {
 }
 
 .bigbox {
-  background:#f7a4a4;
+  background: #f7a4a4;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -77,29 +130,35 @@ h4 {
   flex: 1;
   display: flex;
   width: 80%;
-  padding:10px 10px;
+  padding: 10px 10px;
   text-align: center;
   background: #febe8c;
   color: #fffbc1;
 }
 
 .recipecard {
-    margin: auto;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 500px;
-    background: #fffbc1;
-    color: #f7a4a4;
+  margin: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  background: #fffbc1;
+  color: #f7a4a4;
 }
 
 
 .bearspace {
+  display: flex;
   flex: 1;
   height: 500px;
   background: #fffbc1;
 }
+
+#bearchef {
+  flex: 1;
+}
+
 
 #btn {
   border: none;

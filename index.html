@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Little Bear Bakery</title>
-    <script src="baking.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="banner">
-      <h1>Little Bear Bakery</h1>
-    </div>
-    <!--div for banner-->
-    <div class="bigbox">
-      <div class="container">
-        <div class="recipecard">
-          <div class="lyrics">
-            <h3 id="lyric1">It's a piece of cake to bake a pretty cake!</h3>
-            <h4 id="lyric2">If the way is hazy...</h4>
-          </div>
-          <div id="recipe">
-            <ul>
-              <li>flour</li>
-              <li>sugar</li>
-              <li>egg</li>
-              <li>milk</li>
-              <li>oil</li>
-              <li>vanilla extract</li>
-            </ul>
-          </div>
-          <!--div for recipe-->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Bear Bakery</title>
+  <script src="baking.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="banner">
+    <h1>Little Bear Bakery</h1>
+  </div> <!--div for banner-->
+  
+  <div class="bigbox">
+    <div class="container">
+      <div class="recipecard">
+        <div class="lyrics">
+          <h3 id="lyric1">It's a piece of cake to bake a pretty cake!</h3>
+          <h4 id="lyric2">If the way is hazy...</h4>
         </div>
-        <!--div for recipe card-->
-        <div class="bearspace">
-          <img id="bearchef" src="images/talkingbear.png" />
+        <div id="recipe">
+          <ul>
+            <li>flour</li>
+            <li>sugar</li>
+            <li>egg</li>
+            <li>milk</li>
+            <li>oil</li>
+            <li>vanilla extract</li>
+          </ul>
+        </div> <!--div for recipe-->
+      </div> <!--div for recipe card-->
+      <div class="bearspace">
+        <div class="speech bubble">
+          <div id="bearspeak">Let's make a tasty cake together!
+            <br><br>
+            Let's mix the flour, sugar, oil, milk, egg, and vanilla bean in the stand mixer!
+          </div>
         </div>
-        <br /><br />
-        
+        <img id="bearchef" src="images/talkingbear.png" />
       </div>
-      <!--div for container-->
-      <br>
-      <button onclick="press()" id="btn">Mix!</button>
-    </div>
-    <!--div for bigbox-->
-  </body>
+      <br /><br />
+
+    </div> <!--div for container-->
+    <br>
+    <button onclick="press()" id="btn">Mix!</button>
+  </div> <!--div for bigbox-->
+</body>
+
 </html>

@@ -1,9 +1,25 @@
 const idleChatter = function () {
     document.getElementById("bearchef").src = 'images/idlebear.png';
-}
+};
 
 const talkingBear = function () {
     document.getElementById("bearchef").src = 'images/talkingbear.png';
+};
+
+const happyBear = function () {
+    document.getElementById("bearchef").src = "images/bearhappybounce.png";
+}
+
+const nowWeHaveBatter = function () {
+    document.getElementById("bearspeak").innerHTML = "Now we have cake batter! Let's pour it in the pan.";
+};
+
+const letsBake = function () {
+    document.getElementById("bearspeak").innerHTML = "This is looking great so far! Just gotta bake it up a notch!";
+};
+
+const cakeDone = function () {
+    document.getElementById("bearspeak").innerHTML = "Tada!!! The cake is done! It looks delicious...I might have to just grab a little taste..."
 }
 
 setTimeout(idleChatter, 4000);
@@ -32,10 +48,12 @@ function mix() {
     document.getElementById("lyric1").innerHTML = "You gotta do the cooking by the book!";
     document.getElementById("lyric2").innerHTML = "You know you can't be lazy!";
     document.getElementById("recipe").innerHTML = 'Delicious batter!';
-    document.getElementById("bearchef").src = "images/bearhappybounce.png";
+    happyBear();
+    document.getElementById("bearspeak").innerHTML = "Hooray! This is looking great already!";
+    setTimeout(nowWeHaveBatter, 4000);
     setTimeout(talkingBear, 4000);
     setTimeout(idleChatter, 8000);
-    alert("Now we have cake batter! Let's pour it in the pan.");
+
 }
 
 function pour() {
@@ -43,10 +61,11 @@ function pour() {
     document.getElementById("lyric1").innerHTML = "Never use a messy recipe!";
     document.getElementById("lyric2").innerHTML = "The cake will end up crazy!";
     document.getElementById("recipe").innerHTML = "All battered up and ready for baking!";
-    document.getElementById("bearchef").src = "images/bearhappybounce.png";
+    happyBear();
+    document.getElementById("bearspeak").innerHTML = "Wonderful! Great job!";
+    setTimeout(letsBake, 4000);
     setTimeout(talkingBear, 4000);
     setTimeout(idleChatter, 8000);
-    alert("Oh boy! Let's bake it in the oven!");
 }
 
 function bake() {
@@ -54,10 +73,11 @@ function bake() {
     document.getElementById("lyric1").innerHTML = "If you do the cooking by the book...";
     document.getElementById("lyric2").innerHTML = "Then you'll have a cake!"
     document.getElementById("recipe").innerHTML = "Hooray!! You made a delicious cake! Let's bake again sometime!";
-    document.getElementById("bearchef").src = "images/bearhappybounce.png";
+    happyBear();
+    document.getElementById("bearspeak").innerHTML = "Don't worry, this won't take long!"
+    setTimeout(cakeDone, 4000);
     setTimeout(talkingBear, 4000);
     setTimeout(idleChatter, 8000);
-    alert('Ding! Cake is done!');
 }
 
 
