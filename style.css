@@ -1,8 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico");
 
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  align-items: center;
+  font-family: Comfortaa;
+  background-color: #febe8c;
+}
+
+.banner {
+  width: 100%;
+  height: 275px;
+  background-size: contain;
+  padding: 5px 0;
+  text-align: center;
+  background-image: url(images/lbbheader.png);
+  color: #fffbc1;
+  background-color: #f7a4a4;
+}
+
+h1 {
+  flex: 1 1 0;
+  font-family: "Pacifico";
+  font-size: 5em;
+  -webkit-text-stroke: white 1px;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+#recipe {
+  display: flex;
+  align-items: center;
+}
+
+#animatic {
+  flex: 1 1 0;
+}
+
+.bigbox {
+  background: #f7a4a4;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  padding: 10px 10px;
+  text-align: center;
+  background: #febe8c;
+  color: #fffbc1;
+}
+
+.recipecard {
+  margin: auto;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  background: #fffbc1;
+  color: #f7a4a4;
+}
+
+.bearspace {
+  display: flex;
+  flex: 1 1 0;
+  height: 500px;
+  background: #fffbc1;
+}
 
 .speech {
-  flex: 1;
+  flex: 1 1 0;
   display: flex;
   align-content: space-around;
   justify-content: center;
@@ -28,137 +105,9 @@
   top: 375px;
 }
 
-body {
-  align-items: center;
-  font-family: Lato;
-}
-
-.banner {
-  width: 100%;
-  height: 275px;
-  background-size: contain;
-  padding: 5px 0;
-  text-align: center;
-  background-image: url(images/lbbheader.png);
-  color: #fffbc1;
-  background-color: #f7a4a4;
-}
-
-h1 {
-  flex: 1;
-  font-family: 'Pacifico';
-  font-size: 5em;
-  -webkit-text-stroke: white 1px;
-}
-
-;
-
-h3,
-div {
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato';
-}
-
-h3 {
-  font-size: 1.8em;
-  padding: 10px 0;
-  font-weight: 500;
-  animation: wiggle 2s;
-}
-
-@keyframes wiggle {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 300;
-  padding: 0px 0;
-}
-
-#recipe {
-  align-items: center;
-  font-size: 1.1em;
-  font-weight: 100;
-  letter-spacing: 5px;
-}
-
-.lyrics {
-  align-items: center;
-}
-
-.bigbox {
-  background: #f7a4a4;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  flex: 1;
-  display: flex;
-  width: 80%;
-  padding: 10px 10px;
-  text-align: center;
-  background: #febe8c;
-  color: #fffbc1;
-}
-
-.recipecard {
-  margin: auto;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 500px;
-  background: #fffbc1;
-  color: #f7a4a4;
-}
-
-
-.bearspace {
-  display: flex;
-  flex: 1;
-  height: 500px;
-  background: #fffbc1;
-}
-
 #bearchef {
-  flex: 1;
+  flex: 1 1 0;
 }
-
 
 #btn {
   border: none;
